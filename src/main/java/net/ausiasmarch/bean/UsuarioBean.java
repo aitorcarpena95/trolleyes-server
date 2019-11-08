@@ -20,8 +20,6 @@ public class UsuarioBean implements BeanInterface {
     private String login;
     @Expose
     private String password;
- 
- 
 
     @Override
     public Integer getId() {
@@ -36,7 +34,7 @@ public class UsuarioBean implements BeanInterface {
     public String getDni() {
         return dni;
     }
-    
+
     public String getNombre() {
         return nombre;
     }
@@ -60,15 +58,15 @@ public class UsuarioBean implements BeanInterface {
     public String getPassword() {
         return password;
     }
-    
-      public void setDni(String dni) {
+
+    public void setDni(String dni) {
         this.dni = dni;
     }
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-    
+
     public void setApellido1(String apellido1) {
         this.apellido1 = apellido1;
     }
@@ -88,7 +86,5 @@ public class UsuarioBean implements BeanInterface {
     public void setPassword(String password) {
         this.password = password;
     }
-
-
 
 }
