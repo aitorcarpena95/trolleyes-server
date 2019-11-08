@@ -1,2 +1,2 @@
-# trollEYES-server
-trollEYES-server
+# trolleyes-server
+trolleyes-server
