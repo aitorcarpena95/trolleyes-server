@@ -96,14 +96,9 @@ public class UsuarioDao implements DaoInterface {
     @Override
     public Integer remove(int id) throws SQLException {
         PreparedStatement oPreparedStament = null;
-        String strSQL = "";
-        int iResult;
-        strSQL = "DELETE ";
-        strSQL += " FROM usuario ";
-        strSQL += " WHERE id=?";
-        oPreparedStament = oConnection.prepareStatement(strSQL, Statement.RETURN_GENERATED_KEYS);
+        oPreparedStament = oConnection.prepareStatement("DELETE FROM usuario WHERE id = ?", Statement.RETURN_GENERATED_KEYS);
         oPreparedStament.setInt(1, id);
-        iResult = oPreparedStament.executeUpdate();
+        int iResult = oPreparedStament.executeUpdate();
         return iResult;
     }
 

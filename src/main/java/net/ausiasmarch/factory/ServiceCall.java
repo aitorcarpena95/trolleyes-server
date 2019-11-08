@@ -2,6 +2,7 @@ package net.ausiasmarch.factory;
 
 import javax.servlet.http.HttpServletRequest;
 import net.ausiasmarch.service.CarritoService;
+import net.ausiasmarch.service.CompraService;
 import net.ausiasmarch.service.ProductoService;
 import net.ausiasmarch.service.UsuarioService;
 import net.ausiasmarch.service.FacturaService;
@@ -106,8 +107,32 @@ public class ServiceCall {
                     strResult = oFacturaService.getCount();
                     break;
             }
+        } else if(ob.equalsIgnoreCase("compra")) {
+            CompraService oCompraService = new CompraService(oRequest);
+            switch (op) {
+                case "get":
+                    strResult = oCompraService.get();
+                    break;
+                case "update":
+                    strResult = oCompraService.update();
+                    break;
+                case "remove":
+                    strResult = oCompraService.remove();
+                    break;
+                case "insert":
+                    strResult = oCompraService.insert();
+                    break;
+                case "getpage":
+                    strResult = oCompraService.getPage();
+                    break;
+                case "getcount":
+                    strResult = oCompraService.getCount();
+                    break;
+            }
+        }
+        return null;
         
     }
-        return strResult;
         
-    }}
+        
+    }

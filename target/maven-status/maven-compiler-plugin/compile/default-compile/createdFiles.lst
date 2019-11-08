@@ -2,13 +2,17 @@ net/ausiasmarch/factory/ConnectionFactory$1.class
 net/ausiasmarch/connection/implementation/BoneCPConnectionImplementation.class
 net/ausiasmarch/connection/implementation/C3P0ConnectionImplementation.class
 net/ausiasmarch/connection/implementation/DBCPConnectionImplementation.class
+net/ausiasmarch/dao/CompraDao.class
 net/ausiasmarch/service/UsuarioService.class
 net/ausiasmarch/factory/GsonFactory.class
+net/ausiasmarch/service/CompraService.class
 net/ausiasmarch/factory/ServiceCall.class
 net/ausiasmarch/setting/ConfigurationSettings$EnvironmentConstans.class
 net/ausiasmarch/bean/ProductoBean.class
 net/ausiasmarch/bean/BeanInterface.class
+net/ausiasmarch/dao/UsuarioDao.class
 net/ausiasmarch/service/ServiceInterface.class
+net/ausiasmarch/bean/CompraBean.class
 net/ausiasmarch/dao/DaoInterface.class
 net/ausiasmarch/connection/ConnectionInterface.class
 net/ausiasmarch/factory/ConnectionFactory.class
@@ -21,6 +25,7 @@ net/ausiasmarch/setting/ConnectionSettings$EnumConstans.class
 net/ausiasmarch/service/ProductoService.class
 net/ausiasmarch/service/CarritoService.class
 net/ausiasmarch/dao/ProductoDao.class
+net/ausiasmarch/bean/UsuarioBean.class
 net/ausiasmarch/connection/ConnectionFactory.class
 net/ausiasmarch/connection/implementation/HikariConnectionImplementation.class
 net/ausiasmarch/bean/ItemBean.class
