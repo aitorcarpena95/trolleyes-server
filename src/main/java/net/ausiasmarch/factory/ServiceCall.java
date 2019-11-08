@@ -129,6 +129,28 @@ public class ServiceCall {
                     strResult = oCompraService.getCount();
                     break;
             }
+        } else if(ob.equalsIgnoreCase("compra")) {
+            CompraService oCompraService = new CompraService(oRequest);
+            switch (op) {
+                case "get":
+                    strResult = oCompraService.get();
+                    break;
+                case "update":
+                    strResult = oCompraService.update();
+                    break;
+                case "remove":
+                    strResult = oCompraService.remove();
+                    break;
+                case "insert":
+                    strResult = oCompraService.insert();
+                    break;
+                case "getpage":
+                    strResult = oCompraService.getPage();
+                    break;
+                case "getcount":
+                    strResult = oCompraService.getCount();
+                    break;
+            }
         }
         return null;
         
