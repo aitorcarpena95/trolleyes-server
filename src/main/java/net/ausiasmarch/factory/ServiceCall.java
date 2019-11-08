@@ -150,11 +150,8 @@ public class ServiceCall {
                 case "getcount":
                     strResult = oCompraService.getCount();
                     break;
-            }
+           }
         }
-        return null;
-        
+        return strResult;
     }
-        
-        
-    }
+}
