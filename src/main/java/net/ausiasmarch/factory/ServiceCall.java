@@ -25,6 +25,24 @@ public class ServiceCall {
                 case "logout":
                     strResult = oUsuarioService.logout();
                     break;
+                case "get":
+                    strResult = oUsuarioService.get();
+                    break;
+                case "getcount":
+                    strResult = oUsuarioService.getCount();
+                    break;
+                case "insert":
+                    strResult = oUsuarioService.insert();
+                    break;
+                case "update":
+                    strResult = oUsuarioService.update();
+                    break;
+                case "remove":
+                    strResult = oUsuarioService.remove();
+                    break;
+                case "getpage":
+                    strResult = oUsuarioService.getPage();
+                    break;
             }
         } else if (ob.equalsIgnoreCase("producto")) {
             ProductoService oProductoService = new ProductoService(oRequest);
