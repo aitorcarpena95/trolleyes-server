@@ -6,6 +6,7 @@ import net.ausiasmarch.service.CompraService;
 import net.ausiasmarch.service.ProductoService;
 import net.ausiasmarch.service.TipoUsuarioService;
 import net.ausiasmarch.service.UsuarioService;
+import net.ausiasmarch.service.FacturaService;
 
 public class ServiceCall {
 
@@ -84,6 +85,28 @@ public class ServiceCall {
                 case "empty":
                     strResult = oCarritoService.empty();
                     break;
+            } 
+        } else if (ob.equalsIgnoreCase("factura")) {
+            FacturaService oFacturaService = new FacturaService(oRequest);
+            switch (op) {
+                case "get":
+                    strResult = oFacturaService.get();
+                    break;
+                case "update":
+                    strResult = oFacturaService.update();
+                    break;
+                case "remove":
+                    strResult = oFacturaService.remove();
+                    break;
+                case "insert":
+                    strResult = oFacturaService.insert();
+                    break;
+                case "getpage":
+                    strResult = oFacturaService.getPage();
+                    break;
+                case "getcount":
+                    strResult = oFacturaService.getCount();
+                    break;
             }
         } else if(ob.equalsIgnoreCase("compra")) {
             CompraService oCompraService = new CompraService(oRequest);
@@ -107,6 +130,28 @@ public class ServiceCall {
                     strResult = oCompraService.getCount();
                     break;
             }
+        } else if(ob.equalsIgnoreCase("compra")) {
+            CompraService oCompraService = new CompraService(oRequest);
+            switch (op) {
+                case "get":
+                    strResult = oCompraService.get();
+                    break;
+                case "update":
+                    strResult = oCompraService.update();
+                    break;
+                case "remove":
+                    strResult = oCompraService.remove();
+                    break;
+                case "insert":
+                    strResult = oCompraService.insert();
+                    break;
+                case "getpage":
+                    strResult = oCompraService.getPage();
+                    break;
+                case "getcount":
+                    strResult = oCompraService.getCount();
+                    break;
+           }
         }
          if (ob.equalsIgnoreCase("tipo_usuario")) {
             TipoUsuarioService oTipoUsuarioService = new TipoUsuarioService(oRequest);
